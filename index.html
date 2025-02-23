@@ -31,6 +31,7 @@
   <link rel="preconnect" href="https://pranaygupta.in" />
   <title>SATHISH S</title>
   <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4bf48f78b4.js" crossorigin="anonymous"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q55ZCQXDWJ"></script>
@@ -179,7 +180,7 @@
 </p>
 
           <div class="about_button">
-            <a  href="./Resume .pdf" class="button button--flex" target="_blank">
+            <a  href="./my resume.pdf" class="button button--flex" target="_blank">
               Resume<i class="uil uil-file-download-alt button_icon"></i>
             </a>
           </div>
@@ -422,7 +423,7 @@
                     rel="noopener noreferrer">Government High School, Pennagar</a></span>
                 <div class="qualification_calendar">
                   <i class="uil uil-calendar-alt"></i>
-                  20010 - 2020
+                  2010 - 2020
                 </div>
               </div>
               <div>
@@ -585,11 +586,13 @@
 
             <div class="portfolio_data">
               <h3 class="portfolio_title">
-                Dar Al Marefa
+                Ecommerce Website
               </h3>
               <p class="portfolio_description">
-                This is a content-driven website for a school in Dubai. It is built using Next.js, Tailwind CSS and
-                Strapi CMS.
+                UI/UX improvements
+New functionalities (cart, payment gateway, filters, etc.)
+Performance optimization
+SEO improvements
               </p>
               <a href="https://dazzlewear.netlify.app/" class="button button-flex button-small portfolio_button"
                 target="_blank">
@@ -605,11 +608,10 @@
 
             <div class="portfolio_data">
               <h3 class="portfolio_title">
-                AG Automobile
+                Coffee-Cup
               </h3>
               <p class="portfolio_description">
-                This is a content-driven website for an Automobile Business in Dubai. It is built using Next.js,
-                Tailwind CSS and Strapi CMS.
+                This is a content-driven eCommerce website for a Coffee Cup business. It is built using Next.js, Strapi CMS, HTML, CSS, and JavaScript.
               </p>
               <a href="https://diethermarcelo.github.io/coffee-cup/" class="button button-flex button-small portfolio_button"
                 target="_blank">
@@ -625,11 +627,10 @@
 
             <div class="portfolio_data">
               <h3 class="portfolio_title">
-                Al Ghurair Investment
+                E-Learning Website
               </h3>
               <p class="portfolio_description">
-                A content-driven website for one of the largest family business groups in the Middle East. It is built
-                using Next.js, Tailwind CSS and Strapi CMS.
+                A content-driven website for one of the largest family business groups in the Middle East. It is built using Next.js, Strapi CMS, HTML, CSS, and JavaScript.
               </p>
               <a href="#" class="button button-flex button-small portfolio_button"
                 target="_blank">
@@ -689,7 +690,7 @@
               <p class="portfolio_description">
                 This program was able to gain web development skills.
               </p>
-              <a href="#" class="button button-flex button-small portfolio_button"
+              <a href="./assets/certification/web.jpg" class="button button-flex button-small portfolio_button"
                 target="_blank">
                 Check out
                 <i class="uil uil-arrow-right button_icon"></i>
@@ -708,7 +709,7 @@
               <p class="portfolio_description">
                 This program was gained python program skills.
               </p>
-              <a href="https://diethermarcelo.github.io/coffee-cup/" class="button button-flex button-small portfolio_button"
+              <a href="./assets/certification/Sathish S Python Development.jpg" class="button button-flex button-small portfolio_button"
                 target="_blank">
                 Check out
                 <i class="uil uil-arrow-right button_icon"></i>
@@ -727,7 +728,7 @@
               <p class="portfolio_description">
                 a program contant a Retech lesar company this very helpfull program.
               </p>
-              <a href="#" class="button button-flex button-small portfolio_button"
+              <a href="./assets/certification/IV.jpg" class="button button-flex button-small portfolio_button"
                 target="_blank">
                 Check out
                 <i class="uil uil-arrow-right button_icon"></i>
@@ -746,7 +747,7 @@
               <p class="portfolio_description">
                 this Certificate provided by IBM Cloud Computing Program.
               </p>
-              <a href="#" class="button button-flex button-small portfolio_button" target="_blank">
+              <a href="./assets/certification/IBM.jpg" class="button button-flex button-small portfolio_button" target="_blank">
                 Check out
                 <i class="uil uil-arrow-right button_icon"></i>
               </a>
@@ -764,7 +765,7 @@
               <p class="portfolio_description">
                 In this course is provided by deloitte company.
               </p>
-              <a href="#" class="button button-flex button-small portfolio_button" target="_blank">
+              <a href="./assets/certification/Data Analytice.jpg" class="button button-flex button-small portfolio_button" target="_blank">
                 Check out
                 <i class="uil uil-arrow-right button_icon"></i>
               </a>
@@ -862,6 +863,24 @@
           </div>
         </form>
 
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("t8xctmY9go3F17RN1"); // Replace with your EmailJS User ID
+  })();
+  
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    emailjs.sendForm('sathish_2434', 'template_vshpqkb', this) // Replace 'template_xxxxx' with your actual Template ID
+      .then(function() {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send message: ' + JSON.stringify(error));
+      });
+  });
+</script>
+
       </div>
     </section>
   </main>
@@ -926,6 +945,8 @@
   <script src="./assets/js/tilt.jquery.min.js"></script>
 
   <script src="./assets/js/main.js"></script>
+  
+
 </body>
 
 </html>
